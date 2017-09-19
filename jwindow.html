@@ -1,0 +1,41 @@
+<parts for="window">
+   <div class="yui3-u flexcol jwindow">
+      <div class="titlebar flexnoshrink" data-js-name="divTitlebar">
+         <div class="yui3-u title-text" data-js-name="divTitle"></div>
+         <div class="yui3-u window-controls" data-js-name="divControls">
+            <div class="yui3-u btn-close" data-js-name="divBtnClose"><i class="fa fa-minus"></i></div>
+         </div>
+      </div>
+      <div class="body flexrow flexgrow" data-js-name="divBody"></div>
+      <div class="button-area" data-js-name="divButtonArea"></div>
+   </div>
+
+</parts>
+
+<parts for="window-button">
+   <div class="jbutton" data-js-events="click">
+      <div class="button-icon" data-js-name="divButtonIcon"></div>
+      <div class="button-text" data-js-name="divButtonText">&nbsp;</div>
+   </div>
+</parts>
+
+
+<parts for="tab-nav">
+   <part for="tab-control">
+      <div class="tab-control flexcol flexgrow">
+         <div class="tab-holder flexrow flexshrink" data-js-name="divTabHolder"></div>
+         <div class="content flexcol flexgrow" data-js-name="divContent"></div>
+      </div>
+   </part>
+
+   <part for="tab">
+      <div class="tab flexshrink" data-js-events="click" data-js-name="divTab">
+         <div class="title" data-js-name="divTitle"></div>
+      </div>
+
+      <div class="content flexcol flexgrow" data-js-name="divContent"></div>
+   </part>
+
+
+</parts>
+

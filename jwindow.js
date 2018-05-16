@@ -58,7 +58,7 @@ var jwin = new function() {
 
    jwin.bringWindowToTop = function(w) {
       var sortedWindows = jwin.allWindows.sort( function(a,b) {
-         return utils.compareString(a.body.css("z-index"), b.body.css("z-index"));
+         return utils.compareString(parseInt(a.body.css("z-index")), parseInt(b.body.css("z-index")));
       });
 
       for (var i=0; i<sortedWindows.length; i++) {
